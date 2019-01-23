@@ -2,27 +2,20 @@
 money=input("Importo ---> ")
 money=int(money)
 
-ven=0
-di=0
-ci=0
-un=0
+ven=money/20
+ven=int(ven)
+money=money%20
 
-while(money > 19):
-      ven+=1
-      money-=20
+di=money/10
+di=int(di)
+money=money%10
 
-if(money > 9):
-   di=1
-   money-=10
+ci=money/5
+ci=int(ci)
+money=money%5
 
-if(money > 4):
-   ci=1
-   money-=5
-
-while(money > 0):
-      un+=1
-      money-=1
-
+un=money
+un=int(un)
 
 print("$20 = ", ven)
 print("$10 = ", di)
