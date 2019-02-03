@@ -1,21 +1,18 @@
 
-money=input("Importo ---> ")
-money=int(money)
+money = input("Importo ---> ")
+money = int(money)
 
-ven=money/20
-ven=int(ven)
-money=money%20
+ven = money//20
+money = money%20
 
-di=money/10
-di=int(di)
-money=money%10
+di = money//10
+money = money%10
 
-ci=money/5
-ci=int(ci)
-money=money%5
+ci = money//5
+money = money%5
 
-un=money
-un=int(un)
+un = money
+un = int(un)
 
 print("$20 = ", ven)
 print("$10 = ", di)
